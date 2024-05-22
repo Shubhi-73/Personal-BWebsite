@@ -11,8 +11,8 @@
   --primary-dark: #5651e5;
   --primary-darkest: rgb(8, 6, 37);
   --primary-light: #709dff;
+  --accent-color: #a2e8f6;
 }
-
 
 @layer base {
   html {
@@ -39,3 +39,81 @@
 .hero{
   background-color: rgb(8, 6, 37);
 }
+
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700;800&display=swap');
+
+:root {
+  --primary-dark: #5651e5;
+  --primary-darkest: rgb(8, 6, 37);
+  --primary-light: #709dff;
+  --accent-color: #ff6f61;
+}
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+
+  body {
+    @apply font-[Poppins] bg-primary-darkest text-white;
+  }
+
+  li {
+    @apply p-4 text-sm;
+  }
+
+  button {
+    @apply px-4 py-2 border bg-gradient-to-r from-[var(--primary-dark)] to-[var(--primary-light)] text-white;
+  }
+
+  h1, h2 {
+    @apply font-bold;
+  }
+
+  h1 {
+    @apply text-4xl;
+  }
+
+  h2 {
+    @apply text-2xl;
+  }
+}
+
+@layer utilities {
+  .bg-primary-darkest {
+    background-color: var(--primary-darkest);
+  }
+
+  .text-accent-color {
+    color: var(--accent-color);
+  }
+
+  .hover\:text-accent-color:hover {
+    color: var(--accent-color);
+  }
+}
+
+.hero {
+  @apply bg-primary-darkest;
+}
+
+.activities-container {
+  display: flex;
+  overflow-x: auto;
+  padding: 1rem;
+  -webkit-overflow-scrolling: touch;
+}
+
+.activities-container::-webkit-scrollbar {
+ Hide scrollbar for WebKit browsers 
+  display: none; 
+}
+
+.activities-container {
+  -ms-overflow-style: none; Hide scrollbar for IE and Edge
+  scrollbar-width: none; Hide scrollbar for Firefox
+} */
