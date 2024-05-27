@@ -22,6 +22,10 @@ import Activities from './components/Activities';
 import Navbar from './components/Navbar';
 import BlogPage from './pages/BlogPage';
 import BlogDetail from './pages/BlogDetail';
+import BookPage from './pages/BookPage';
+import BookDetail from './pages/BookDetail';
+import AI from './pages/Blogs/AI';
+import AttentionEconomy from './pages/Blogs/AttentionEconomy';
 
 function App() {
   return (
@@ -36,8 +40,13 @@ function App() {
              
             </>
           } />
-          <Route path="/blogs" element={<BlogPage />} />
+          <Route path="/blogs" element={<><Navbar /><BlogPage /></>} />
+          {/* <Route path="/blogs/0" element={<><Navbar /><BlogDetail /></>} /> */}
           <Route path="/blogs/:blogId" element={<><Navbar /> <BlogDetail /></>} />
+          <Route path="/books" element={<><Navbar /><BookPage /></>} />
+          
+          <Route path="/books/:bookId" element={<><Navbar /><BookDetail /></>} />
+          
         </Routes>
       </div>
     </Router>

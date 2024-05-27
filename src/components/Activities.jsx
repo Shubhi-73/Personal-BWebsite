@@ -3,29 +3,29 @@ import { Link } from 'react-router-dom';
 
 const Activities = () => {
   return (
-    <div className='max-w-[1140px] m-auto w-full md:flex mt-[-75px]'>
-      <Link to='/blogs' className='relative p-4 transition-transform transform hover:scale-105'>
-        <h3 className='absolute z-10 top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] text-white text-2xl font-bold'>Blog</h3>
+    <div className='max-w-[1140px] m-auto w-full flex flex-wrap justify-center gap-4 mt-[-75px] p-4'>
+      <Link to='/blogs' className='relative w-full sm:w-[calc(50%-1rem)] md:w-[calc(33%-1rem)] p-4 transition-transform transform hover:scale-105'>
+        <h3 className='absolute z-10 top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] text-white text-2xl font-bold text-center'>Blog</h3>
         <img
-        className='w-full h-full object-cover relative border-4 border-white shadow-2xl rounded-lg'
-          src='https://images.unsplash.com/photo-1432821596592-e2c18b78144f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
-          alt='/'
-        />
-      </Link>
-      <Link to='/tech' className='relative p-4 transition-transform transform hover:scale-105'>
-        <h3 className='absolute z-10 top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] text-white text-2xl font-bold'>Tech</h3>
-        <img
-        className='w-full h-full object-cover relative border-4 border-white shadow-2xl rounded-lg'
+          className='w-full h-64 object-cover relative border-4 border-white shadow-2xl rounded-lg'
           src='https://images.unsplash.com/photo-1531297484001-80022131f5a1?q=80&w=2020&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
-          alt='/'
+          alt='Blog'
         />
       </Link>
-      <Link to='/books' className='relative p-4 transition-transform transform hover:scale-105'>
-        <h3 className='absolute z-10 top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] text-white text-2xl font-bold'>Books</h3>
+      <a href='https://snigdhas.hashnode.dev/' className='relative w-full sm:w-[calc(50%-1rem)] md:w-[calc(33%-1rem)] p-4 transition-transform transform hover:scale-105'>
+        <h3 className='absolute z-10 top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] text-white text-2xl font-bold text-center'>Tech</h3>
         <img
-        className='w-full h-full object-cover relative border-4 border-white shadow-2xl rounded-lg'
+          className='w-full h-64 object-cover relative border-4 border-white shadow-2xl rounded-lg'
+          src='https://images.unsplash.com/photo-1531297484001-80022131f5a1?q=80&w=2020&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+          alt='Tech'
+        />
+      </a>
+      <Link to='/books' className='relative w-full sm:w-[calc(50%-1rem)] md:w-[calc(33%-1rem)] p-4 transition-transform transform hover:scale-105'>
+        <h3 className='absolute z-10 top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] text-white text-2xl font-bold text-center'>Books</h3>
+        <img
+          className='w-full h-64 object-cover relative border-4 border-white shadow-2xl rounded-lg'
           src='https://images.unsplash.com/photo-1610116306796-6fea9f4fae38?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
-          alt='/'
+          alt='Books'
         />
       </Link>
     </div>
@@ -33,6 +33,7 @@ const Activities = () => {
 };
 
 export default Activities;
+
 
 // import React from 'react';
 

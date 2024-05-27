@@ -17,18 +17,19 @@ const Navbar = () => {
   };
 
   return (
-    <div className='w-full min-h-[50px] flex justify-between items-center absolute z-10 text-white'>
+    <div className='w-full min-h-[50px] flex justify-between items-center absolute z-10 text-white navbar'>
       <div className='flex justify-between'>
-        <CiLinkedin className='mx-4' />
+        {/* <CiLinkedin className='mx-4' />
         <FaTwitter className='mx-4' />
-        <FaInstagram className='mx-4' />
+        <FaInstagram className='mx-4' /> */}
+        <Link to='/'>Snigdha</Link>
       </div>
       <ul className='hidden sm:flex px-4'>
         <li>
-          <Link to='/'>Books</Link>
+          <Link to='/books'>Books</Link>
         </li>
         <li>
-          <Link to='#gallery'>Tech</Link>
+          <a href='https://snigdhas.hashnode.dev/'>Tech</a>
         </li>
         <li>
           <Link to='/blogs'>Blogs</Link>
