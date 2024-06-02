@@ -71,24 +71,36 @@ const blogs = [
           imgSrc: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8cQeih_d60OnCSjhoSKTmIvLmJXoNxWXYG3-rQzTlfA&s',
         },
         {
+          title: 'Abstraction is hurting our cognition',
+          date: 'May 31, 2024',
+          description: 'Do we know how anything works anymore? If you don’t know what is, you’ll never know what will be.',
+          imgSrc: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1ABgx9WJPlZbJQHrKmwFPQWyA0JXXHFiXwg&s',
+        },
+        {
           title: 'Parallel Universes and Shannon’s number',
           date: 'May 21, 2024',
           description: 'Are there really copies of us out there?',
           imgSrc: 'https://miro.medium.com/v2/resize:fit:828/format:webp/1*lO8dOxa0YkLZc8DpkMpjXQ.png',
         },
         {
-          title: 'How to Protect Your Privacy Online',
-          date: 'February 15, 2023',
-          description: 'With the internet being an integral part of our daily lives, it\'s crucial to protect your privacy...',
-          imgSrc: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuP63VhQwMwLHFUP6ovY15xGmSQ5TakDPoVKpZksiF-Q&s',
+          title: 'The Bond market explained to a kid',
+          date: 'February 3, 2024',
+          description: "What's so complicated about debt?",
+          imgSrc: 'https://miro.medium.com/v2/resize:fit:1100/format:webp/0*29zeuO4_iCeyZSaI',
+        },
+        {
+          title: 'Is competitiveness really a virtue?',
+          date: 'May 10, 2024',
+          description: '“I am very competitive” — is this something to brag about?',
+          imgSrc: 'https://www.getopenwater.com/wp-content/uploads/2018/08/competition-1024x407.jpg',
         },
       ];
 
 const BlogPage = () => {
   return (
-    <div className="max-w-7xl mx-32 p-4 bg-grey">
+    <div className=" mx-10 lg:mx-32 p-4 bg-grey">
       <h1 className="text-5xl font-bold mb-12 text-center text-blue-800 my-20">Blog</h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+      <div className="grid mgrid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-12">
         {blogs.map((blog, index) => (
           <Link to={`/blogs/${index}`} key={index} className="block">
             <div className="rounded-lg shadow-lg overflow-hidden transition-transform transform hover:scale-105 hover:shadow-2xl">

@@ -1,5 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import techImage from '../assets/images/techActivities.png';
+import bookImage from '../assets/images/bookActivities.png';
+import blogImage from '../assets/images/blogActivities.png'
 
 const Activities = () => {
   return (
@@ -8,7 +11,7 @@ const Activities = () => {
         <h3 className='absolute z-10 top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] text-white text-2xl font-bold text-center'>Blog</h3>
         <img
           className='w-full h-64 object-cover relative border-4 border-white shadow-2xl rounded-lg'
-          src='https://images.unsplash.com/photo-1531297484001-80022131f5a1?q=80&w=2020&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+          src={blogImage}
           alt='Blog'
         />
       </Link>
@@ -16,7 +19,7 @@ const Activities = () => {
         <h3 className='absolute z-10 top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] text-white text-2xl font-bold text-center'>Tech</h3>
         <img
           className='w-full h-64 object-cover relative border-4 border-white shadow-2xl rounded-lg'
-          src='https://images.unsplash.com/photo-1531297484001-80022131f5a1?q=80&w=2020&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+          src={techImage}
           alt='Tech'
         />
       </a>
@@ -24,7 +27,7 @@ const Activities = () => {
         <h3 className='absolute z-10 top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] text-white text-2xl font-bold text-center'>Books</h3>
         <img
           className='w-full h-64 object-cover relative border-4 border-white shadow-2xl rounded-lg'
-          src='https://images.unsplash.com/photo-1610116306796-6fea9f4fae38?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+          src={bookImage}
           alt='Books'
         />
       </Link>

@@ -43,7 +43,7 @@ const BookDetail = () => {
   }
 
   return (
-    <div className="max-w-7xl mx-auto p-4 blogDetail bg-white">
+    <div className="max-w-5xl mx-32 lg:mx-64 p-4 blogDetail bg-white">
       <h1 className="text-4xl font-bold mb-4 text-gray-800 my-15">{book.title}</h1>
       <p className="text-gray-500 text-sm mb-4">{book.date}</p>
       <img className="w-full h-64 object-cover mb-4 rounded-md" src={book.imgSrc} alt={book.title} />

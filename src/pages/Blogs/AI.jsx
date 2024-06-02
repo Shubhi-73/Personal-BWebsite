@@ -1,7 +1,7 @@
 import React from 'react';
 const AI = () => {
 return (
-    <div className="max-w-7xl mx-64 p-8 text-left text-xl tracking-normal leading-relaxed font-serif">
+    <div className="max-w-7xl mx-32 lg:mx-64 mx-20 p-8 text-left text-xl tracking-normal leading-relaxed font-serif">
     <p className="mb-4">Nvidia is the talk of the town. It’s now the 3rd most valuable company in the world and has probably gone to replace Netflix in FAANG.</p>
 
 <p className="mb-4">Blackwell happens to be 4x more powerful in training AI models than its predecessor — Hopper. If things continue at this pace, we’d be living in a sci-fi movie in less than 2 decades.</p>

@@ -22,7 +22,7 @@ const Navbar = () => {
         {/* <CiLinkedin className='mx-4' />
         <FaTwitter className='mx-4' />
         <FaInstagram className='mx-4' /> */}
-        <Link to='/'>Snigdha</Link>
+        <Link to='/' className='home ml-5'>Snigdha</Link>
       </div>
       <ul className='hidden sm:flex px-4'>
         <li>
@@ -35,7 +35,7 @@ const Navbar = () => {
           <Link to='/blogs'>Blogs</Link>
         </li>
         <li>
-          <Link to='#contact'>Contact</Link>
+          <Link to='#contact'>About</Link>
         </li>
       </ul>
       
@@ -63,7 +63,7 @@ const Navbar = () => {
             <a href='/blogs'>Blogs</a>
           </li>
           <li className='text-2xl py-8'>
-            <a href='#contact'>Contact</a>
+            <a href='#contact'>About</a>
           </li>
         </ul>
       </div>

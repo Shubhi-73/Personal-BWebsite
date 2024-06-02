@@ -1,0 +1,3 @@
+For CSS:
+1. change the book main page block layout.
+have the book on the left and description of the block on the right
